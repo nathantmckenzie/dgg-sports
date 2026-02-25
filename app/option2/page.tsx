@@ -16,20 +16,19 @@ export default function Home() {
           priority
         />
         <div
-          className="bg-white/30 px-4 py-2 rounded absolute max-w-[90vw] w-full backdrop-blur-sm 
-top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em]
-text-[clamp(.5rem,2vw,1.5rem)] uppercase text-white text-center"
+          className="bg-white/20 px-4 py-2 rounded absolute max-w-[90vw] w-full backdrop-blur-xs 
+top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3"
         >
-          <h1 className="mb-2">
+          <h2 className="text-[clamp(1rem,3vw,2rem)] uppercase mb-2">
             Where Hockey Was Born.
             <br />
             Where Its Spirit Still Lives.
-          </h1>
+          </h2>
 
-          <h4 className="mt-0">
+          <h3 className="text-[clamp(.5rem,2vw,1.25rem)] mt-0">
             Join us on the frozen expanse of Great Bear Lake in Délı̨nę, Northwest
             Territories for a historic northern homecoming 200 years in the making.
-          </h4>
+          </h3>
         </div>
 
         {/* Soft blend into page */}
