@@ -40,7 +40,7 @@ export default function LearnTheHistory() {
         {/* Image */}
         <div className="max-w-4xl mx-auto mb-16">
           <Image
-            src="/history.png"
+            src="/learn-the-history.png"
             alt="Frozen Great Bear Lake in winter"
             width={1200}
             height={800}
