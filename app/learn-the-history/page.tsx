@@ -23,7 +23,7 @@ export default function LearnTheHistory() {
           cursor-pointer
         "
       >
-        ← Back Home
+        ← Home
       </Link>
 
       {/* Page Content */}

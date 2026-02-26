@@ -3,30 +3,60 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans bg-[#0F1720] text-[#D6DEE6]">
+    <div className="font-sans bg-[#F2F6F8] text-[#1C2B36]">
       {/* ================= HERO ================= */}
-      <section className="relative w-full">
+      <section id="home" className="relative w-full">
         <Image
           src="/hero.png"
           alt="Great Bear Lake Winter Classic"
           width={1920}
           height={1000}
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-full h-auto block"
           priority
         />
-        {/* Soft gradient overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F1720]/90 via-transparent to-transparent" />
+        <div
+          className="bg-white/20 px-4 rounded absolute max-w-[90vw] w-full backdrop-blur-xs 
+top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6"
+        >
+          <h2 className="text-[clamp(0.75rem,1.75vw,1.5rem)] uppercase mb-2">
+            Where Hockey Was Born.
+            <br />
+            Where Its Spirit Still Lives.
+          </h2>
 
-        {/* CTA */}
-        <div className="absolute bottom-[12%] left-[8%]">
+          <h3 className="text-[clamp(.5rem,1.75vw,1rem)] mt-0">
+            Join us on the frozen expanse of Great Bear Lake in Délı̨nę, Northwest
+            Territories for a historic northern homecoming 200 years in the making.
+          </h3>
+        </div>
+
+        {/* Soft blend into page */}
+        {/* <div
+          className="absolute bottom-0 left-0 w-full h-56 
+  bg-gradient-to-b 
+  from-transparent 
+  to-[#F2F6F8] 
+  mix-blend-normal"
+        /> */}
+        <div className="absolute bottom-[12%] right-[8%]">
           <Link
             href="/learn-the-history"
-            className="inline-block text-[#9EC5D9] border border-[#9EC5D9]
-                 px-[clamp(0.75rem,2vw,1.5rem)]
-                 py-[clamp(0.5rem,1.5vw,1rem)]
-                 text-[clamp(0.875rem,2vw,1.25rem)]
-                 tracking-wide hover:bg-[#9EC5D9]/10 transition"
+            className="
+    inline-block
+    p-[15px]
+    bg-[#1C2B36]       /* dark slate background */
+    text-[#F2F6F8]     /* light text for contrast */
+    font-semibold
+    uppercase tracking-wide
+    text-[clamp(0.75rem,1.5vw,2rem)]   /* scales on different screen sizes */
+    rounded-full        /* fully rounded pill shape */
+    shadow-lg           /* subtle lift over image */
+    hover:bg-[#2A3B48]  /* slightly darker on hover */
+    transition
+    no-underline
+    cursor-pointer
+  "
           >
             Learn the History
           </Link>
@@ -34,226 +64,309 @@ export default function Home() {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section id="about" className="py-[8vw] md:py-[10vw]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            A Celebration of Northern Ice
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            Two centuries after one of the earliest recorded hockey games on Great Bear
-            Lake, the Winter Classic returns to Délı̨nę. This gathering blends sport,
-            culture, history, and community — honouring the land, the people, and the
-            enduring spirit of the game.
-          </p>
+      <section id="about" className="py-[12vw] md:py-32 bg-[#1C2B36] text-[#E6EDF2]">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              WHERE THE GAME BEGAN, THE CELEBRATION BEGINS.
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
+              On the vast frozen surface of Great Bear Lake, a simple game played nearly
+              two centuries ago became part of hockey’s earliest history. This year, the
+              sport returns to Délı̨nę for a once-in-a-lifetime gathering that honours the
+              land, the people, and the legacy that continues to inspire Canadians.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/about.png"
+              alt="About"
+              width={960}
+              height={540}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+          </div>
         </div>
       </section>
 
-      {/* ================= ALUMNI ================= */}
-      <section id="alumni" className="py-[8vw] md:py-[10vw] bg-[#1A2430]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            All-Star Alumni
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            Legends of the game gather on sacred northern ice. Former NHL greats return to
-            celebrate 200 years of hockey’s story, connect with youth, and honour the
-            community that safeguarded one of the sport’s earliest written accounts.
-          </p>
-          <div className="flex justify-center my-12">
-            <div className="w-32 h-[2px] bg-[#C9A227]" />
+      <div className="h-px bg-[#1C2B36]/10 mx-8" />
+
+      {/* ================= ALUMNI (Ceremonial Dark Section) ================= */}
+      <section id="alumni" className="py-[12vw] md:py-32">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
+          {/* <div className="w-full md:w-1/2">
+            <Image
+              src="/alumni.png"
+              alt="All-Star Alumni"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.25)]"
+            />
+          </div> */}
+
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="text-[#4A5C68] font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              WHERE HOCKEY’S PAST MEETS ITS HEROES.{" "}
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="text-[#4A5C68] leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
+              On the frozen expanse of Great Bear Lake, over 20 NHL alumni will gather to
+              honour 200 years of the sport they helped define. Their stories, their
+              passion, and their connection to the game bring a powerful energy to this
+              northern homecoming — a celebration of legacy, community, and the enduring
+              spirit of hockey.
+            </p>
           </div>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            More than a roster, their presence represents respect — for the land, the
-            culture, and the history that shaped Canada’s game.
-          </p>
         </div>
       </section>
+
+      <div className="h-px bg-[#1C2B36]/10 mx-8" />
 
       {/* ================= CULTURAL ================= */}
-      <section id="cultural" className="py-[8vw] md:py-[10vw]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Cultural Programming
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)] mb-6">
-            The Winter Classic is more than hockey. It is shaped by the people of Délı̨nę
-            and the Sahtú region.
-          </p>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            Visitors will experience drum dancing, storytelling, northern cuisine, hand
-            games, artistry, and teachings from Elders — celebrating the connection
-            between the land, the language, and the living history of Great Bear Lake.
-          </p>
+      <section id="cultural" className="py-[12vw] md:py-32 bg-[#1C2B36] text-[#E6EDF2]">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+          {/* <div className="w-full md:w-1/2">
+            <Image
+              src="/cultural.png"
+              alt="Cultural Programming"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+          </div> */}
+
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              HONOURING THE LAND AND THE PEOPLE WHO KEEP ITS STORIES ALIVE
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+              Cultural programming throughout the Winter Classic highlights the rich
+              traditions of Délı̨nę and the Sahtú region. From drum dances and hand games
+              to Elders’ teachings and community feasts, each experience reflects the deep
+              connection between the people, the land, and the early history of hockey on
+              Great Bear Lake.
+            </p>
+          </div>
         </div>
       </section>
 
+      <div className="h-px bg-[#1C2B36]/10 mx-8" />
+
       {/* ================= SCHEDULE ================= */}
-      <section id="schedule" className="py-[8vw] md:py-[10vw] bg-[#1A2430]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Weekend Schedule Preview
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)] mb-6">
-            Three days of hockey, culture, and northern celebration.
-          </p>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            From opening ceremonies and alumni games to youth clinics, storytelling
-            sessions, and community feasts, the Winter Classic offers something for
-            families, fans, and visitors alike. A full detailed schedule will be released
-            soon.
-          </p>
+      <section id="schedule" className="py-[12vw] md:py-32">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
+          {/* <div className="w-full md:w-1/2">
+            <Image
+              src="/schedule.png"
+              alt="Weekend Schedule Preview"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+          </div> */}
+
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              THREE DAYS OF HOCKEY, CULTURE, AND NORTHERN SPIRIT
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="text-[#4A5C68] leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
+              The Winter Classic brings a full lineup of events to Délı̨nę — from NHL
+              alumni appearances and youth clinics to drum dances, storytelling, and
+              community feasts. Explore the highlights below and get ready for an
+              unforgettable weekend on the lake.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* ================= LOCATION ================= */}
-      <section id="location" className="py-[8vw] md:py-[10vw]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Délı̨nę — Great Bear Lake
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)] mb-10">
-            Nestled on the shores of Sahtú (Great Bear Lake), Délı̨nę is a vibrant Dene
-            community rooted in culture, history, and northern hospitality.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-12 text-left">
-            <div>
-              <h4 className="text-white font-semibold mb-4 text-[clamp(1.125rem,2.2vw,1.5rem)]">
-                Getting Here
-              </h4>
-              <ul className="space-y-2 list-disc list-inside text-[clamp(1rem,2vw,1.25rem)]">
-                <li>Commercial flights</li>
-                <li>Winter / ice road access</li>
-                <li>Charter options</li>
-                <li>Local transportation services</li>
-              </ul>
+      <section id="location" className="py-[12vw] md:py-32 bg-[#1C2B36] text-[#E6EDF2]">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              EXPERIENCE THE HEART OF THE SAHTÚ REGION{" "}
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+              Délı̨nę welcomes visitors from across the North and beyond to celebrate on
+              the land where hockey’s earliest story was written. Nestled on the shores of
+              Great Bear Lake, the community offers breathtaking landscapes, rich culture,
+              and genuine northern hospitality.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <div className="relative w-full aspect-[16/9] rounded-sm overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
+              <iframe
+                src="https://www.google.com/maps?q=Del%C4%B1%CC%A8n%C4%99%2C%20Northwest%20Territories&output=embed"
+                className="absolute inset-0 w-full h-full border-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div>
-              <h4 className="text-white font-semibold mb-4 text-[clamp(1.125rem,2.2vw,1.5rem)]">
-                Where to Stay
-              </h4>
-              <ul className="space-y-2 list-disc list-inside text-[clamp(1rem,2vw,1.25rem)]">
-                <li>Local accommodations</li>
-                <li>Community hosting options</li>
-                <li>Regional lodging overflow</li>
-                <li>Winter travel guidance</li>
-              </ul>
-            </div>
+      <div className="h-px bg-[#1C2B36]/10 mx-8" />
+
+      {/* ================= PARTNERS & SPONSORS ================= */}
+      <section id="partners" className="py-[12vw] md:py-32">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
+          {/* <div className="w-full md:w-1/2">
+            <Image
+              src="/schedule.png"
+              alt="Weekend Schedule Preview"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+          </div> */}
+
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              HONOURING THE PARTNERS WHO MAKE THIS CELEBRATION POSSIBLE{" "}
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="text-[#4A5C68] leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
+              The All-Star Alumni Winter Classic is made possible through the support of
+              community partners, regional organizations, and national sponsors who share
+              a commitment to celebrating the history of hockey on Great Bear Lake. Their
+              contributions help bring this landmark event to life and ensure a meaningful
+              experience for visitors, athletes, and the people of Délı̨nę.
+            </p>
           </div>
         </div>
       </section>
 
       {/* ================= AUCTION ================= */}
-      <section id="auction" className="py-[8vw] md:py-[10vw] bg-[#1A2430]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Winter Classic Auction
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)] mb-6">
-            Bid on exclusive memorabilia, signed jerseys, game-used equipment, and
-            once-in-a-lifetime northern experiences.
-          </p>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            Every winning bid directly supports youth programs, cultural initiatives, and
-            community development in Délı̨nę and the Sahtú region.
-          </p>
-        </div>
-      </section>
-
-      {/* ================= MERCH ================= */}
-      <section id="auction" className="py-[8vw] md:py-[10vw]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Merch
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)] mb-6">
-            Merch coming soon
-          </p>
-        </div>
-      </section>
-
-      {/* ================= PARTNERS ================= */}
-      <section id="partners" className="py-[8vw] md:py-[10vw] bg-[#1A2430]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="font-serif text-[clamp(1.875rem,5vw,3rem)] text-white mb-6">
-            Partners & Sponsors
-          </h2>
-          <p className="text-[#D6DEE6] leading-relaxed text-[clamp(1rem,2.2vw,1.25rem)]">
-            This historic event is made possible through collaboration with community
-            leaders, regional organizations, and national partners dedicated to sport,
-            culture, and northern communities.
-          </p>
+      <section id="auction" className="py-[12vw] md:py-32 bg-[#1C2B36] text-[#E6EDF2]">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+              YOUR CHANCE TO OWN A PIECE OF THE CELEBRATION
+            </h2>
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+              From signed jerseys and game-used equipment to exclusive northern
+              experiences, the Winter Classic auction offers something for every fan.
+              Proceeds directly support community programming and youth engagement in the
+              Sahtú region.
+              <br />
+              <br />
+              Browse the full auction lineup online.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/auction.png"
+              alt="Cultural Programming"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
+          </div>
         </div>
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="bg-black border-t border-[#1A2430] py-8">
-        <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-3 gap-5 text-[#9EC5D9] text-[clamp(0.75rem,1.5vw,0.875rem)]">
-          <div>
-            <h3 className="text-white font-bold mb-3 text-[clamp(1rem,2vw,1.25rem)]">
-              All-Star Alumni Winter Classic
-            </h3>
-            <p>Honouring 200 years of hockey history on Great Bear Lake.</p>
+      <footer className="bg-[#0F1A22] text-[#E6EDF2] py-6 md:py-10">
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          {/* Top Grid */}
+          <div
+            className="grid grid-cols-1 md:grid-cols-4 
+                    gap-5 md:gap-12 
+                    text-center md:text-left"
+          >
+            {/* Brand */}
+            <div className="space-y-3 md:space-y-6">
+              <h3 className="font-serif tracking-[0.15em] uppercase text-base md:text-lg">
+                All-Star Alumni Winter Classic
+              </h3>
+              <p className="text-xs md:text-sm text-[#B8C7D2] leading-relaxed">
+                Honouring 200 years of hockey history on Great Bear Lake.
+              </p>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
+                Navigation
+              </h4>
+              <ul className="grid grid-cols-2  space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
+                <li>
+                  <Link href="#home">Home</Link>
+                </li>
+                <li>
+                  <Link href="#about">About</Link>
+                </li>
+                <li>
+                  <Link href="/learn-the-history">History</Link>
+                </li>
+                <li>
+                  <Link href="#alumni">Alumni</Link>
+                </li>
+                <li>
+                  <Link href="#cultural-programming">Cultural Programming</Link>
+                </li>
+                <li>
+                  <Link href="#schedule">Schedule</Link>
+                </li>
+                <li>
+                  <Link href="#location">Location</Link>
+                </li>
+                <li>
+                  <Link href="#partners">Partners & Sponsors</Link>
+                </li>
+                <li>
+                  <Link href="#auction">Auction</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Connect */}
+            <div>
+              <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
+                Connect With Us
+              </h4>
+              <ul className="flex flex-row justify-center md:flex-col space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                <li>
+                  <a href="#">Instagram</a>
+                </li>
+                <li>
+                  <a href="#">YouTube</a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
+                Legal
+              </h4>
+              <ul className="flex flex-row md:flex-col justify-center space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
+                <li>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link href="/terms-of-use">Terms of Use</Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h4 className="text-white font-semibold mb-3 text-[clamp(1rem,2vw,1.25rem)]">
-              Navigation
-            </h4>
-            <ul className="space-y-2 flex flex-row">
-              <li>
-                <Link href="#about" className="pr-2">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="#alumni" className="pr-2">
-                  Alumni
-                </Link>
-              </li>
-              <li>
-                <Link href="#cultural" className="pr-2">
-                  Cultural
-                </Link>
-              </li>
-              <li>
-                <Link href="#schedule" className="pr-2">
-                  Schedule
-                </Link>
-              </li>
-              <li>
-                <Link href="#location" className="pr-2">
-                  Location
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-3 text-[clamp(1rem,2vw,1.25rem)]">
-              Connect
-            </h4>
-            <ul className="space-y-2 flex flex-row">
-              <li>
-                <Link href="#" className="pr-2">
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="pr-2">
-                  Instagram
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="pr-2">
-                  YouTube
-                </Link>
-              </li>
-            </ul>
-            <p className="mt-6 text-[clamp(0.625rem,1vw,0.75rem)] text-[#5C7080]">
-              © 2026 All-Star Alumni Winter Classic. All rights reserved.
-            </p>
+          {/* Divider */}
+          <div className="mt-5 md:mt-10 border-t border-[#2A3B48] pt-3 md:pt-5 text-center text-[10px] md:text-xs text-[#8FA3B2]">
+            © 2026 All-Star Alumni Winter Classic. All rights reserved.
           </div>
         </div>
       </footer>
