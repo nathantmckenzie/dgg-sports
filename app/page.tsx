@@ -4,7 +4,29 @@ import LegalModals from "@/app/components/LegalModals";
 
 export default function Home() {
   return (
-    <div className="font-sans bg-[#F2F6F8] text-[#1C2B36]">
+    <div className="bg-[#F2F6F8] text-[#1C2B36]">
+      <header className="w-full bg-[#1C2B36] border-b border-[#1C2B36]/10">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-start">
+          <Link
+            href="https://dgg-sports-main-site.vercel.app/"
+            className="
+        inline-block
+        px-5 py-2
+        bg-[#1C2B36]
+        text-[#F2F6F8]
+        text-sm
+        font-semibold
+        uppercase
+        tracking-wide
+        rounded-sm
+        hover:bg-[#2A3B48]
+        transition
+      "
+          >
+            DGG Sports
+          </Link>
+        </div>
+      </header>
       {/* ================= HERO ================= */}
       <section id="home" className="relative w-full">
         <Image
