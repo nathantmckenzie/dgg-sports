@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LegalModals from "@/app/components/LegalModals";
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               alt="About"
               width={960}
               height={540}
+              loading="eager"
               className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>
@@ -105,7 +107,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
             />
           </div> */}
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full text-center md:text-left">
             <h2 className="text-[#4A5C68] font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
               WHERE HOCKEY’S PAST MEETS ITS HEROES.{" "}
             </h2>
@@ -136,12 +138,12 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
             />
           </div> */}
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full  text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
               HONOURING THE LAND AND THE PEOPLE WHO KEEP ITS STORIES ALIVE
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
-            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
               Cultural programming throughout the Winter Classic highlights the rich
               traditions of Délı̨nę and the Sahtú region. From drum dances and hand games
               to Elders’ teachings and community feasts, each experience reflects the deep
@@ -167,7 +169,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
             />
           </div> */}
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
               THREE DAYS OF HOCKEY, CULTURE, AND NORTHERN SPIRIT
             </h2>
@@ -190,7 +192,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               EXPERIENCE THE HEART OF THE SAHTÚ REGION{" "}
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
-            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
               Délı̨nę welcomes visitors from across the North and beyond to celebrate on
               the land where hockey’s earliest story was written. Nestled on the shores of
               Great Bear Lake, the community offers breathtaking landscapes, rich culture,
@@ -226,7 +228,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
             />
           </div> */}
 
-          <div className="w-full md:w-1/2 text-center md:text-left">
+          <div className="w-full text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
               HONOURING THE PARTNERS WHO MAKE THIS CELEBRATION POSSIBLE{" "}
             </h2>
@@ -250,22 +252,23 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               YOUR CHANCE TO OWN A PIECE OF THE CELEBRATION
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
-            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem]">
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
               From signed jerseys and game-used equipment to exclusive northern
               experiences, the Winter Classic auction offers something for every fan.
               Proceeds directly support community programming and youth engagement in the
               Sahtú region.
               <br />
               <br />
-              Browse the full auction lineup online.
+              Available soon.
             </p>
           </div>
           <div className="w-full md:w-1/2">
             <Image
               src="/auction.png"
               alt="Cultural Programming"
-              width={1920}
-              height={1080}
+              width={960}
+              height={540}
+              loading="eager"
               className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>
@@ -296,7 +299,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
                 Navigation
               </h4>
-              <ul className="grid grid-cols-2  space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
+              <ul className="grid grid-cols-2 space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
                 <li>
                   <Link href="#home">Home</Link>
                 </li>
@@ -347,21 +350,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
                 </li>
               </ul>
             </div>
-
-            {/* Legal */}
-            <div>
-              <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
-                Legal
-              </h4>
-              <ul className="flex flex-row md:flex-col justify-center space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
-                <li>
-                  <Link href="/privacy-policy">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link href="/terms-of-use">Terms of Use</Link>
-                </li>
-              </ul>
-            </div>
+            <LegalModals />
           </div>
 
           {/* Divider */}
