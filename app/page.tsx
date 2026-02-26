@@ -51,7 +51,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
     font-semibold
     uppercase tracking-wide
     text-[clamp(0.75rem,1.5vw,2rem)]   /* scales on different screen sizes */
-    rounded-full        /* fully rounded pill shape */
+    rounded-sm
     shadow-lg           /* subtle lift over image */
     hover:bg-[#2A3B48]  /* slightly darker on hover */
     transition
@@ -85,7 +85,6 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               alt="About"
               width={960}
               height={540}
-              loading="eager"
               className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>
@@ -268,7 +267,6 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               alt="Cultural Programming"
               width={960}
               height={540}
-              loading="eager"
               className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>

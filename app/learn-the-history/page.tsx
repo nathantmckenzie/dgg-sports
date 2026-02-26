@@ -49,7 +49,7 @@ export default function LearnTheHistory() {
           />
         </div>
 
-        <div className="w-16 h-[2px] bg-[#B28A2E] mb-16 mx-auto" />
+        <div className="w-16 h-0.5 bg-[#B28A2E] mb-16 mx-auto" />
 
         {/* Section Header */}
         <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,4vw,2.5rem)] uppercase mb-10 text-center">
