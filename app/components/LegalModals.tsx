@@ -9,11 +9,11 @@ export default function LegalModals() {
   return (
     <>
       <div>
-        <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-6 text-[#B28A2E]">
+        <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 text-center text-[#B28A2E]">
           Legal
         </h4>
 
-        <ul className="flex flex-row justify-center md:flex-col space-x-2 space-y-2 md:space-y-3 text-xs md:text-sm">
+        <ul className="flex flex-row justify-center space-x-2 space-y-2  text-xs md:text-sm">
           <li>
             <button
               onClick={() => setActive("privacy")}
