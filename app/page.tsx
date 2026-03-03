@@ -56,7 +56,7 @@ export default function Home() {
         />
         <div
           className="bg-white/40 px-4 rounded absolute max-w-[90vw] w-full backdrop-blur-xs 
-top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6"
+top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3 sm:mt-6"
         >
           <h2 className="text-[clamp(0.75rem,1.75vw,1.5rem)] uppercase mb-2">
             Where Hockey Was Born.
@@ -71,14 +71,6 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
           </h3>
         </div>
 
-        {/* Soft blend into page */}
-        {/* <div
-          className="absolute bottom-0 left-0 w-full h-56 
-  bg-gradient-to-b 
-  from-transparent 
-  to-[#F2F6F8] 
-  mix-blend-normal"
-        /> */}
         <div className="absolute bottom-[12%] right-[8%]">
           <Link
             href="/learn-the-history"
@@ -184,7 +176,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-6
               historic northern homecoming:
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-16 tracking-[0.12em] text-[#4A5C68] uppercase text-center">
+            <div className="text-[clamp(0.75rem,1.25vw,1.5rem)] grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-10 tracking-[0.12em] text-[#4A5C68] uppercase text-center">
               <span>Dave Babych</span>
               <span>Wayne Babych</span>
               <span>Ray Bourque</span>
