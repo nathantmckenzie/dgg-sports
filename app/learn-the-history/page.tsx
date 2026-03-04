@@ -59,11 +59,36 @@ export default function LearnTheHistory() {
         {/* Body Text */}
         <div className="space-y-8 text-[clamp(1rem,2vw,1.25rem)] leading-loose text-[#4A5C68]">
           <p>
-            In the winter of <b>1825</b>, Arctic explorer <b>Sir John Franklin</b> and his
-            crew established their winter camp at <b>Fort Franklin</b>, on the southwest
-            shore of <b>Great Bear Lake</b>. Preparing for the long northern journey
-            ahead, the men settled into daily routines that helped them endure the cold
-            and isolation.
+            In the winter of <b>1825</b>, Arctic explorer{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/John_Franklin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              Sir John Franklin
+            </a>{" "}
+            and his crew established their winter camp at{" "}
+            <a
+              href="https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=1820"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              Fort Franklin
+            </a>{" "}
+            (now the present-day community of{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/D%C3%A9l%C4%B1%CC%A8n%C4%99"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              Délı̨nę
+            </a>
+            ) on the southwest shore on the southwest shore of <b>Great Bear Lake</b>.
+            Preparing for the long northern journey ahead, the men settled into daily
+            routines that helped them endure the cold and isolation.
           </p>
 
           <p>
@@ -72,8 +97,15 @@ export default function LearnTheHistory() {
           </p>
 
           <blockquote className="border-l-4 border-[#B28A2E] pl-6 italic text-[#1C2B36]">
-            “till the snow fell, the game of hockey played on the ice was the morning’s
-            sport.”
+            <a
+              href="https://www.pwnhc.ca/en/birthplace-hockey"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              “till the snow fell, the game of hockey played on the ice was the morning’s
+              sport.”
+            </a>
           </blockquote>
 
           <p>
@@ -88,7 +120,24 @@ export default function LearnTheHistory() {
           </p>
 
           <p>
-            It happened here, on <b> Sahtú</b>, the vast lake that has sustained the Dene
+            It happened here, on{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Great_Bear_Lake"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              Sahtú
+            </a>
+            , the vast lake that has sustained the{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Dene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-400 transition"
+            >
+              Dene
+            </a>{" "}
             people for generations.
           </p>
 

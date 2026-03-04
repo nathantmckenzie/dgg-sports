@@ -7,6 +7,21 @@ export default function Home() {
     <div className="bg-[#F2F6F8] text-[#1C2B36]">
       <header className="w-full bg-[#1C2B36] border-b border-[#1C2B36]/10">
         <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+          <a
+            href="https://en.wikipedia.org/wiki/D%C3%A9l%C4%B1%CC%A8n%C4%99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/deline-logo.svg"
+              alt="Deline Logo"
+              width={35}
+              height={35}
+              sizes="50px"
+              className="cursor-pointer"
+              priority
+            />
+          </a>
           <Link
             href="https://dgg-sports-main-site.vercel.app/"
             className="
@@ -25,6 +40,25 @@ export default function Home() {
       "
           >
             DGG Sports
+          </Link>
+          <Link
+            href="https://dgg-sports-main-site.vercel.app/"
+            className="
+        inline-block
+        px-5 py-2
+        bg-[#2A3B48]
+        text-[#F2F6F8]
+        text-sm
+        font-semibold
+        uppercase
+        tracking-wide
+        rounded-sm
+        hover:bg-[#3a5162]
+        transition
+        
+      "
+          >
+            Contact
           </Link>
           <a
             href="https://www.facebook.com/share/176KnLH4As/"
@@ -55,19 +89,18 @@ export default function Home() {
           priority
         />
         <div
-          className="bg-white/40 px-4 rounded absolute max-w-[90vw] w-full backdrop-blur-xs 
+          className="bg-white/10 px-4 rounded absolute max-w-[90vw] w-full backdrop-blur-xs 
 top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3 sm:mt-6"
         >
-          <h2 className="text-[clamp(0.75rem,1.75vw,1.5rem)] uppercase mb-2">
+          <h2 className="text-[clamp(0.75rem,1.75vw,1.5rem)] uppercase mb-2 font-bold">
             Where Hockey Was Born.
             <br />
             Where Its Spirit Still Lives.
           </h2>
 
-          <h3 className="text-[clamp(.5rem,1.75vw,1rem)] mt-0">
+          <h3 className="text-[clamp(.5rem,1.75vw,1rem)] mt-0 font-bold">
             Join us March 20 – 22, 2026 on the frozen expanse of Great Bear Lake in
-            Délı̨nę, Northwest Territories for a historic northern homecoming 200 years in
-            the making.
+            Délı̨nę, NT for a historic northern homecoming 200 years in the making.
           </h3>
         </div>
 
@@ -88,6 +121,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
     transition
     no-underline
     cursor-pointer
+    font-serif
   "
           >
             Learn the History
@@ -230,11 +264,10 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
               and the early history of hockey on Great Bear Lake.
               <br />
               <br />
-              Cultural programming also gives visitors a chance to learn directly from the
-              people of Délı̨nę. Through shared activities, local teachings, and time spent
-              with community members, guests can experience the traditions that continue
-              to shape life on Great Bear Lake and the history that connects this place to
-              the early game.
+              Visitors will have a chance to learn directly from the people of Délı̨nę.
+              Through shared activities, local teachings, and time spent with community
+              members, guests can experience the traditions that continue to shape life on
+              Great Bear Lake and the history that connects this place to the early game.
             </p>
           </div>
         </div>
@@ -260,6 +293,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
               Live Entertainment
             </h2>
             <p className="mb-10 text-[clamp(1rem,1.5vw,1.25rem)] text-[#4A5C68] ">
+              Award-winning Canadian icons{" "}
               <a
                 href="https://www.instagram.com/p/DU8IbQtgBNM/?img_index=1"
                 target="_blank"
@@ -291,7 +325,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
             <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif">
               Schedule
             </h2>
-            <ul className="space-y-4 text-[#4A5C68] leading-loose text-[clamp(1rem,1.5vw,1.25rem)] text-[#4A5C68]">
+            <ul className="space-y-4 text-[#4A5C68] leading-loose text-[clamp(1rem,1.5vw,1.25rem)] text-[#4A5C68] mb-10">
               <li>
                 <strong>March 20:</strong> Gala, Player Meet & Greet, Team Selection, Live
                 Performances
@@ -304,6 +338,9 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
                 <strong>March 22:</strong> Closing Ceremony, Ice Fishing
               </li>
             </ul>
+            <p className="text-[clamp(1rem,1.75vw,1.25rem)]">
+              WITH MORE ACTIVITES AND EVENTS TO BE ANNOUNCED
+            </p>
           </div>
         </div>
       </section>
