@@ -295,7 +295,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
             <p className="mb-10 text-[clamp(1rem,1.5vw,1.25rem)] text-[#4A5C68] ">
               Award-winning Canadian icons{" "}
               <a
-                href="https://www.instagram.com/p/DU8IbQtgBNM/?img_index=1"
+                href="https://www.chadbrownlee.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-400 transition"
@@ -304,7 +304,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
               </a>
               ,{" "}
               <a
-                href="https://www.instagram.com/p/C__Z9j-o9LQ/"
+                href="https://www.tomcochrane.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-400 transition"
@@ -313,7 +313,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
               </a>
               , and{" "}
               <a
-                href="https://www.instagram.com/p/DRU7NX-DV01/"
+                href="https://aaronpritchett.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-400 transition"
@@ -354,10 +354,18 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
             <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
-              Délı̨nę welcomes visitors from across the North and beyond to celebrate on
-              the land where hockey’s earliest story was written. Nestled on the shores of
-              Great Bear Lake, the community offers breathtaking landscapes, rich culture,
-              and genuine northern hospitality.
+              Délı̨nę welcomes visitors from across the{" "}
+              <a
+                href="https://spectacularnwt.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-400 transition"
+              >
+                North
+              </a>{" "}
+              and beyond to celebrate on the land where hockey’s earliest story was
+              written. Nestled on the shores of Great Bear Lake, the community offers
+              breathtaking landscapes, rich culture, and genuine northern hospitality.
             </p>
             <br />
             <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
@@ -386,17 +394,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
       {/* ================= PARTNERS & SPONSORS ================= */}
       <section id="partners" className="py-[12vw] md:py-32">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
-          {/* <div className="w-full md:w-1/2">
-            <Image
-              src="/schedule.png"
-              alt="Weekend Schedule Preview"
-              width={1920}
-              height={1080}
-              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
-            />
-          </div> */}
-
-          <div className="w-full text-center md:text-left">
+          <div className="w-full text-center md:text-left md:w-1/2">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
               HONOURING THE PARTNERS WHO MAKE THIS CELEBRATION POSSIBLE{" "}
             </h2>
@@ -407,7 +405,37 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
               a commitment to celebrating the history of hockey on Great Bear Lake. Their
               contributions help bring this landmark event to life and ensure a meaningful
               experience for visitors, athletes, and the people of Délı̨nę.
+              <br />
+              <br />
+              Click for more information about{" "}
+              <a
+                href="https://www.facebook.com/DelineGotineGovernment/posts/pfbid0jFkJpWsrt7z8j97wQUSELEMNVSZ34bfVmkx6z95fzYiGKuSpYLAMtpdtNyqvdheFl?rdid=enYTa82O6bZcBX0Z#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-400 transition"
+              >
+                sponsorship
+              </a>{" "}
+              opportunities and tiers available or{" "}
+              <a
+                href="mailto:cal@babychgroup.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-400 transition"
+              >
+                contact
+              </a>{" "}
+              us directly.
             </p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/drum.jpg"
+              alt="About"
+              width={960}
+              height={540}
+              className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+            />
           </div>
         </div>
       </section>
