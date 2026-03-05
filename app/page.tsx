@@ -416,7 +416,7 @@ top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3
       <section id="auction" className="py-[12vw] md:py-32 bg-[#1C2B36] text-[#E6EDF2]">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8 uppercase">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(1.25rem,1.75vw,1.5rem)] mb-8">
               YOUR CHANCE TO OWN A PIECE OF THE CELEBRATION
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
