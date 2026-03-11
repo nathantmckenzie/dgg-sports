@@ -11,7 +11,7 @@ export default function Home() {
       <section id="home" className="relative w-full flex justify-center">
         {/* Container */}
         <div className="relative w-full md:max-w-6xl md:px-6 px-0">
-          {/* Hero Image */}
+          {/* HERO IMAGE */}
           <Image
             src="/hero.png"
             alt="Great Bear Lake Winter Classic"
@@ -22,12 +22,9 @@ export default function Home() {
             priority
           />
 
-          {/* Overlay Content */}
-          <div
-            className="bg-white/40 px-4 rounded absolute w-[90%] max-w-full backdrop-blur-xs
-      top-[0%] left-1/2 -translate-x-1/2 font-serif tracking-[0.15em] text-center mt-3 sm:mt-6 flex flex-col items-center"
-          >
-            {/* <div className="relative w-[clamp(60px,10vw,120px)] aspect-square mb-2 mt-3">
+          {/* LOGO */}
+          <div className="hidden md:block md:absolute md:top-4 md:left-1/2 md:-translate-x-1/2 md:z-20">
+            <div className="relative w-[clamp(60px,10vw,120px)] aspect-square">
               <Image
                 src="/deline-logo.svg"
                 alt="Deline Logo"
@@ -35,41 +32,66 @@ export default function Home() {
                 className="object-contain"
                 priority
               />
-            </div> */}
+            </div>
+          </div>
+
+          {/* TEXT CARD */}
+          <div
+            className="
+      absolute
+      top-[2%]
+      md:top-[20%]
+      left-1/2
+      -translate-x-1/2
+      w-[90%]
+      bg-white/40
+      backdrop-blur-sm
+      rounded
+      px-3
+      py-3
+      text-center
+      font-serif
+      tracking-[0.15em]
+      flex flex-col items-center
+      z-10
+    "
+          >
             <h1 className="text-[clamp(1.25rem,2.5vw,2.5rem)] uppercase mb-2 font-bold">
               2026 ALL STAR ALUMNI WINTER CLASSIC
             </h1>
+
             <h2 className="text-[clamp(0.75rem,1.75vw,1.25rem)] uppercase mb-3 font-bold">
               Where Hockey Was Born.
               <br />
               Where Its Spirit Still Lives.
             </h2>
-            <h3 className="text-[clamp(.5rem,1.75vw,0.9rem)] mt-0 font-bold">
+
+            <h3 className="text-[clamp(.5rem,1.75vw,0.9rem)] font-bold">
               Join us March 20 – 22, 2026 on the frozen expanse of Great Bear Lake in
               Délı̨nę, NT for a historic northern homecoming 200 years in the making.
             </h3>
           </div>
 
-          {/* CTA Button */}
-          <div className="absolute bottom-[12%] right-[8%]">
+          {/* CTA */}
+          <div className="absolute bottom-[5%] right-[5%] z-20">
             <Link
               href="/learn-the-history"
               className="
-          inline-block
-          p-[15px]
-          bg-[#7d9ba2]
-          text-[#F2F6F8]
-          font-semibold
-          uppercase tracking-wide
-          text-[clamp(0.75rem,1.5vw,2rem)]
-          rounded-sm
-          shadow-lg
-          hover:bg-[#2A3B48]
-          transition
-          no-underline
-          cursor-pointer
-          font-serif
-        "
+        inline-block
+        p-[15px]
+        bg-[#7d9ba2]
+        text-[#F2F6F8]
+        font-semibold
+        uppercase tracking-wide
+        text-[clamp(0.75rem,1.5vw,2rem)]
+        rounded-sm
+        shadow-lg
+        hover:bg-[#2A3B48]
+        transition
+        no-underline
+        cursor-pointer
+        font-serif
+      "
             >
               Learn the History
             </Link>
@@ -190,8 +212,8 @@ export default function Home() {
 
       {/* ================= CULTURAL ================= */}
       <section id="cultural" className="py-[12vw] md:py-32 text-white">
-        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
-          <div className="w-full  text-center md:text-left">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 text-center">
+          <div className="w-full md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
               HONOURING THE LAND AND THE PEOPLE WHO KEEP ITS STORIES ALIVE
             </h2>
@@ -350,8 +372,8 @@ export default function Home() {
 
       {/* ================= PARTNERS & SPONSORS ================= */}
       <section id="partners" className="py-[12vw] md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
-          <div className="w-full text-left">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16 text-center md:text-left">
+          <div className="w-full">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
               HONOURING THE PARTNERS WHO MAKE THIS CELEBRATION POSSIBLE{" "}
             </h2>

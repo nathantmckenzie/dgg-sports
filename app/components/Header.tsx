@@ -1,96 +1,82 @@
 import Image from "next/image";
 import Link from "next/link";
-import MobileMenu from "./MobileMenu";
+import MobileSocialMenu from "./MobileSocialMenu";
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#7d9ba2]">
-      <div className="mx-auto px-6 py-3 flex justify-between items-center">
+    <header className="w-full bg-[#7d9ba2] min-h-20">
+      <div className="mx-auto px-3 lg:px-10 h-20 flex justify-between items-center">
         {/* Logo */}
+        <Image
+          src="/deline-logo.svg"
+          alt="Deline Logo"
+          width={45}
+          height={45}
+          priority
+          className="md:hidden"
+        />
 
-        <Image src="/deline-logo.svg" alt="Deline Logo" width={45} height={45} priority />
-
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-4 text-[clamp(0.6rem,0.9vw,0.75rem)] font-semibold uppercase tracking-wide text-[#F2F6F8]">
+        {/* Nav links */}
+        <nav className="flex flex-wrap justify-center gap-2 lg:gap-4 text-[clamp(0.4rem,1vw,0.6rem)] font-semibold uppercase tracking-wide text-[#F2F6F8] w-full lg:w-auto">
           <Link
             href="https://dgg-sports-main-site.vercel.app/"
             className="hover:underline"
           >
             DGG Sports
           </Link>
-          <a className="hover:underline" href="#about">
+          <a href="#about" className="hover:underline">
             About the Event
           </a>
-          <a className="hover:underline" href="#alumni">
+          <a href="#alumni" className="hover:underline">
             All-Star Alumni
           </a>
-          <a className="hover:underline" href="#cultural">
+          <a href="#cultural" className="hover:underline">
             Cultural Programming
           </a>
-          <a className="hover:underline" href="#schedule">
+          <a href="#schedule" className="hover:underline">
             Schedule
           </a>
-          <a className="hover:underline" href="#location">
+          <a href="#location" className="hover:underline">
             Location
           </a>
-          <a className="hover:underline" href="#partners">
+          <a href="#partners" className="hover:underline">
             Sponsors
           </a>
-          <a className="hover:underline" href="#auction">
+          <a href="#auction" className="hover:underline">
             Auction & Merchandise
           </a>
         </nav>
 
-        {/* Right side */}
-        <div className="flex flex-row items-center gap-[clamp(6px,1vw,16px)] relative">
-          <a
-            href="https://www.facebook.com/share/176KnLH4As/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative w-[clamp(30px,3vw,50px)] h-[clamp(30px,3vw,50px)] shrink-0"
-          >
-            <Image
-              src="/facebook-logo.png"
-              alt="Facebook Logo"
-              fill
-              className="object-contain cursor-pointer"
-              priority
-            />
-          </a>
+        {/* Desktop Social Icons */}
+        <div className="hidden md:flex items-center gap-[clamp(6px,1vw,16px)]">
+          <SocialIcon
+            src="/facebook-logo.png"
+            alt="Facebook"
+            link="https://www.facebook.com/share/176KnLH4As/"
+          />
+          <SocialIcon src="/youtube-logo.png" alt="YouTube" link="#" />
+          <SocialIcon src="/instagram-logo.png" alt="Instagram" link="#" />
+          <SocialIcon src="/tiktok-logo.png" alt="TikTok" link="#" />
+        </div>
 
-          <div className="relative w-[clamp(30px,3vw,50px)] h-[clamp(30px,3vw,50px)] shrink-0">
-            <Image
-              src="/youtube-logo.png"
-              alt="Youtube Logo"
-              fill
-              className="object-contain cursor-pointer"
-              priority
-            />
-          </div>
-
-          <div className="relative w-[clamp(30px,3vw,40px)] h-[clamp(30px,3vw,40px)] shrink-0">
-            <Image
-              src="/instagram-logo.png"
-              alt="Instagram Logo"
-              fill
-              className="object-contain cursor-pointer"
-              priority
-            />
-          </div>
-
-          <div className="relative w-[clamp(30px,3vw,40px)] h-[clamp(30px,3vw,40px)] shrink-0 mr-5">
-            <Image
-              src="/tiktok-logo.png"
-              alt="Tiktok Logo"
-              fill
-              className="object-contain cursor-pointer"
-              priority
-            />
-          </div>
-
-          <MobileMenu />
+        {/* Mobile dropdown */}
+        <div className="md:hidden">
+          <MobileSocialMenu />
         </div>
       </div>
     </header>
+  );
+}
+
+function SocialIcon({ src, alt, link }: { src: string; alt: string; link: string }) {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative w-[clamp(20px,3vw,50px)] h-[clamp(30px,3vw,50px)] shrink-0"
+    >
+      <Image src={src} alt={alt} fill className="object-contain cursor-pointer" />
+    </a>
   );
 }
