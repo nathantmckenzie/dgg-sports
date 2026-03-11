@@ -91,14 +91,18 @@ export default function LearnTheHistory() {
             routines that helped them endure the cold and isolation.
           </p>
 
-          <Image
-            src="/old-time-hockey.gif"
-            alt="Old Time Hockey"
-            width={400}
-            height={400}
-            className="w-1/4 h-auto rounded-sm shadow-lg"
-            priority
-          />
+          <div className="sm:flex sm:flex-row sm:items-end mt-15 mb-15">
+            <div className="mb-5 sm:mb-0 sm:mr-5 italic font-bold">From yesterday...</div>
+
+            <Image
+              src="/old-time-hockey.gif"
+              alt="Old Time Hockey"
+              width={400}
+              height={400}
+              className="w-[clamp(300px,100vw,500px)] rounded-sm shadow-lg"
+              priority
+            />
+          </div>
 
           <p>
             Among those routines was a morning activity Franklin casually recorded in his
@@ -161,14 +165,19 @@ export default function LearnTheHistory() {
             celebration — rooted in culture, history, and northern pride.
           </p>
 
-          <Image
-            src="/modern-hockey.gif"
-            alt="Modern Hockey"
-            width={400}
-            height={400}
-            className="w-1/4 h-auto rounded-sm shadow-lg"
-            priority
-          />
+          <div className="sm:flex sm:flex-row sm:items-end mt-15 mb-15">
+            <Image
+              src="/modern-hockey.gif"
+              alt="Modern Hockey"
+              width={400}
+              height={400}
+              className="w-[clamp(300px,100vw,500px)] rounded-sm shadow-lg"
+              priority
+            />
+            <div className="mt-5 sm:ml-5 italic font-bold">
+              ...to today&apos;s modern game
+            </div>
+          </div>
 
           <div className="pt-8">
             <p className="font-semibold text-[#1C2B36] mb-3">The event honours:</p>
