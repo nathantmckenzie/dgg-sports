@@ -246,7 +246,7 @@ export default function Home() {
               and time on the land, giving guests and residents a chance to experience the
               weekend in a way that feels welcoming and connected.
             </p>
-            <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif">
+            <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif text-center">
               Live Entertainment
             </h2>
             <p className="mb-10 text-[clamp(1rem,1.5vw,1.25rem)]">
@@ -279,7 +279,7 @@ export default function Home() {
               </a>{" "}
               will be performing throughout the weekend as part of the celebration.
             </p>
-            <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif">
+            <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif text-center">
               Schedule
             </h2>
             <ul className="space-y-4 leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-10">
@@ -295,7 +295,7 @@ export default function Home() {
                 <strong>March 22:</strong> Closing Ceremony, Ice Fishing
               </li>
             </ul>
-            <p className="text-[clamp(1rem,1.75vw,1.25rem)]">
+            <p className="text-[clamp(1rem,1.75vw,1.25rem)] text-center">
               WITH MORE ACTIVITES AND EVENTS TO BE ANNOUNCED
             </p>
           </div>
