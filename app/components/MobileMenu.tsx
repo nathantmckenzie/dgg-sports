@@ -17,7 +17,7 @@ export default function MobileMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-6 w-64 bg-[#577d85] border border-[#1C2B36]/20 shadow-lg rounded z-10">
+        <div className="absolute right-0 mt-6 w-64 bg-[#7d9ba2] border border-[#1C2B36]/20 shadow-lg rounded z-10">
           <nav className="flex flex-col p-4 gap-3 text-sm uppercase text-[#F2F6F8] font-semibold">
             <Link
               className="hover:underline"
