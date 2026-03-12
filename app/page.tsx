@@ -9,7 +9,6 @@ export default function Home() {
       <Header />
       {/* ================= HERO ================= */}
       <section id="home" className="relative w-full flex justify-center">
-        {/* Container */}
         <div className="relative w-full md:max-w-6xl md:px-6 px-0">
           {/* HERO IMAGE */}
           <Image
@@ -22,9 +21,9 @@ export default function Home() {
             priority
           />
 
-          {/* LOGO */}
-          <div className="hidden md:block md:absolute md:top-4 md:left-1/2 md:-translate-x-1/2 md:z-20">
-            <div className="relative w-[clamp(60px,10vw,120px)] aspect-square">
+          {/* TOP LOGO */}
+          <div className="hidden md:flex absolute top-4 left-1/2 -translate-x-1/2 z-30 items-center gap-4">
+            <div className="relative w-[clamp(60px,8vw,100px)] aspect-square">
               <Image
                 src="/deline-logo.svg"
                 alt="Deline Logo"
@@ -33,65 +32,75 @@ export default function Home() {
                 priority
               />
             </div>
+
+            <div className="relative w-[clamp(70px,8vw,120px)] aspect-square">
+              <Image
+                src="/all-star-game-logo.png"
+                alt="All Star Game Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
 
-          {/* TEXT CARD */}
+          {/* CONTENT STACK */}
           <div
             className="
-      absolute
-      top-[2%]
-      md:top-[20%]
-      left-1/2
-      -translate-x-1/2
-      w-[90%]
-      bg-white/40
-      backdrop-blur-sm
-      rounded
-      px-3
-      py-3
-      text-center
-      font-serif
-      tracking-[0.15em]
-      flex flex-col items-center
-      z-10
-    "
+        absolute
+        top-[3%]
+        md:top-[18%]
+        left-1/2
+        -translate-x-1/2
+        w-[95%]
+        max-w-195
+        flex flex-col
+        items-center
+        text-center
+        font-serif
+        tracking-[0.15em]
+        bg-white/25 
+        backdrop-blur-sm
+        z-20
+      "
           >
-            <h1 className="text-[clamp(1.25rem,2.5vw,2.5rem)] uppercase mb-2 font-bold">
-              2026 ALL STAR ALUMNI WINTER CLASSIC
-            </h1>
+            {/* HEADLINE (blur) */}
+            <div className="w-full px-3 py-3">
+              <h1 className="text-[clamp(1rem,3vw,2.6rem)] uppercase font-bold leading-tight">
+                2026 ALL STAR ALUMNI WINTER CLASSIC
+              </h1>
+            </div>
 
-            <h2 className="text-[clamp(0.75rem,1.75vw,1.25rem)] uppercase mb-3 font-bold">
-              Where Hockey Was Born.
-              <br />
-              Where Its Spirit Still Lives.
-            </h2>
-
-            <h3 className="text-[clamp(.5rem,1.75vw,0.9rem)] font-bold">
-              Join us March 20 – 22, 2026 on the frozen expanse of Great Bear Lake in
-              Délı̨nę, NT for a historic northern homecoming 200 years in the making.
-            </h3>
+            {/* DESCRIPTION (blur) */}
+            <div className="w-full px-3 py-3 text-[clamp(.5rem,1.6vw,1rem)] font-bold">
+              <p className="leading-snug italic">
+                &quot;Join us March 20 – 22, 2026 on the ice of Great Bear Lake in Délı̨nę,
+                NT for a historic northern homecoming 200 years in the making&quot;
+              </p>
+              <p>~ Chief Danny Gaudet</p>
+            </div>
           </div>
 
           {/* CTA */}
-          <div className="absolute bottom-[5%] right-[5%] z-20">
+          <div className="absolute bottom-[3%] right-[3%] md:bottom-[5%] md:right-[5%] z-30">
             <Link
               href="/learn-the-history"
               className="
-        inline-block
-        p-[15px]
-        bg-[#7d9ba2]
-        text-[#F2F6F8]
-        font-semibold
-        uppercase tracking-wide
-        text-[clamp(0.75rem,1.5vw,2rem)]
-        rounded-sm
-        shadow-lg
-        hover:bg-[#2A3B48]
-        transition
-        no-underline
-        cursor-pointer
-        font-serif
-      "
+          inline-block
+          p-[15px]
+          bg-[#7d9ba2]
+          text-[#F2F6F8]
+          font-semibold
+          uppercase tracking-wide
+          text-[clamp(0.75rem,1.5vw,2rem)]
+          rounded-sm
+          shadow-lg
+          hover:bg-[#2A3B48]
+          transition
+          no-underline
+          cursor-pointer
+          font-serif
+        "
             >
               Learn the History
             </Link>
@@ -257,21 +266,23 @@ export default function Home() {
               className="w-full h-auto object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
             />
           </div>
+
           <div className="w-full text-center md:text-left md:w-1/2">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
               THREE DAYS OF HOCKEY, CULTURE, AND NORTHERN SPIRIT
             </h2>
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
-            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-10">
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-14">
               The Winter Classic brings together community events, on‑ice action, cultural
               experiences, and live entertainment. Each day offers a mix of hockey, music,
               and time on the land, giving guests and residents a chance to experience the
               weekend in a way that feels welcoming and connected.
             </p>
+
             <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif text-center">
               Live Entertainment
             </h2>
-            <p className="mb-10 text-[clamp(1rem,1.5vw,1.25rem)]">
+            <p className="text-[clamp(1rem,1.5vw,1.25rem)] mb-14">
               Award-winning Canadian icons{" "}
               <a
                 href="https://www.chadbrownlee.com/"
@@ -290,6 +301,15 @@ export default function Home() {
               >
                 Tom Cochrane
               </a>
+              ,{" "}
+              <a
+                href="https://www.leelagilday.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-400 transition"
+              >
+                Leela Gilday
+              </a>
               , and{" "}
               <a
                 href="https://aaronpritchett.com/"
@@ -300,11 +320,38 @@ export default function Home() {
                 Aaron Pritchett
               </a>{" "}
               will be performing throughout the weekend as part of the celebration.
+              <br />
+              <br />
+              Top Chef Canada Winner{" "}
+              <a
+                href="https://www.instagram.com/chefngomes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-400 transition"
+              >
+                Nicole Gomes
+              </a>{" "}
+              will be attending!
             </p>
+
+            <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif text-center">
+              Featured Activities
+            </h2>
+            <ul className="space-y-2 leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-14 list-disc list-inside">
+              <li>Community Breakfast and Dinner</li>
+              <li>Jam Session / Live Music</li>
+              <li>Mini Minor Hockey and Parents Game</li>
+              <li>$30,000 Fishing Derby and Skidoo Raffle</li>
+              <li>Autograph Signing with NHL Alumni</li>
+              <li>$15,000 Bingo and Casino Night</li>
+              <li>Arts and Crafts Demonstrations</li>
+              <li>Guided Community Tours</li>
+            </ul>
+
             <h2 className="text-[clamp(1rem,1.75vw,1.25rem)] mb-5 uppercase font-serif text-center">
               Schedule
             </h2>
-            <ul className="space-y-4 leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-10">
+            <ul className="space-y-4 leading-loose text-[clamp(1rem,1.5vw,1.25rem)] mb-14">
               <li>
                 <strong>March 20:</strong> Gala, Player Meet & Greet, Team Selection, Live
                 Performances
@@ -317,6 +364,7 @@ export default function Home() {
                 <strong>March 22:</strong> Closing Ceremony, Ice Fishing
               </li>
             </ul>
+
             <p className="text-[clamp(1rem,1.75vw,1.25rem)] text-center">
               WITH MORE ACTIVITES AND EVENTS TO BE ANNOUNCED
             </p>

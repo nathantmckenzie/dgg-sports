@@ -2,22 +2,36 @@ import Image from "next/image";
 import Link from "next/link";
 import MobileSocialMenu from "./MobileSocialMenu";
 
+function SocialIcon({ src, alt, link }: { src: string; alt: string; link: string }) {
+  return (
+    <Link href={link} target="_blank" rel="noopener noreferrer">
+      <Image
+        src={src}
+        alt={alt}
+        width={100}
+        height={100}
+        className="w-[clamp(25px,3vw,50px)] h-auto hover:opacity-80 transition"
+      />
+    </Link>
+  );
+}
+
 export default function Header() {
   return (
-    <header className="w-full bg-[#7d9ba2] min-h-20">
-      <div className="mx-auto px-3 lg:px-10 h-20 flex justify-between items-center">
-        {/* Logo */}
+    <header className="w-full bg-[#7d9ba2]">
+      <div className="mx-auto flex h-20 items-center gap-4 px-3 lg:px-10">
+        {/* Left Logo */}
         <Image
           src="/deline-logo.svg"
           alt="Deline Logo"
-          width={45}
-          height={45}
+          width={100}
+          height={100}
           priority
-          className="md:hidden"
+          className="w-[clamp(30px,6vw,50px)] h-auto md:hidden"
         />
 
-        {/* Nav links */}
-        <nav className="flex flex-wrap justify-center gap-2 lg:gap-4 text-[clamp(0.4rem,1vw,0.6rem)] font-semibold uppercase tracking-wide text-[#F2F6F8] w-full lg:w-auto">
+        {/* Navigation */}
+        <nav className="flex flex-wrap justify-center gap-2 lg:gap-4 text-[clamp(0.45rem,1vw,.9rem)] font-semibold uppercase tracking-wide text-[#F2F6F8] w-full lg:w-auto">
           <Link
             href="https://dgg-sports-main-site.vercel.app/"
             className="hover:underline"
@@ -48,7 +62,7 @@ export default function Header() {
         </nav>
 
         {/* Desktop Social Icons */}
-        <div className="hidden md:flex items-center gap-[clamp(6px,1vw,16px)]">
+        <div className="hidden md:flex items-center gap-[clamp(12px,2vw,24px)] ml-auto">
           <SocialIcon
             src="/facebook-logo.png"
             alt="Facebook"
@@ -59,24 +73,21 @@ export default function Header() {
           <SocialIcon src="/tiktok-logo.png" alt="TikTok" link="#" />
         </div>
 
-        {/* Mobile dropdown */}
-        <div className="md:hidden">
+        {/* Mobile Social Dropdown */}
+        <div className="md:hidden ml-auto">
           <MobileSocialMenu />
         </div>
+
+        {/* Right Logo */}
+        <Image
+          src="/all-star-game-logo.png"
+          alt="All Star Game Logo"
+          width={100}
+          height={100}
+          priority
+          className="w-[clamp(30px,7vw,60px)] h-auto md:hidden"
+        />
       </div>
     </header>
-  );
-}
-
-function SocialIcon({ src, alt, link }: { src: string; alt: string; link: string }) {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative w-[clamp(20px,3vw,50px)] h-[clamp(30px,3vw,50px)] shrink-0"
-    >
-      <Image src={src} alt={alt} fill className="object-contain cursor-pointer" />
-    </a>
   );
 }
