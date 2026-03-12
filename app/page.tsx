@@ -74,8 +74,9 @@ export default function Home() {
             {/* DESCRIPTION (blur) */}
             <div className="w-full px-3 py-3 text-[clamp(.7rem,1.6vw,1rem)] font-bold">
               <p className="leading-snug italic">
-                &quot;Join us March 20 – 22, 2026 on the ice of Great Bear Lake in Délı̨nę,
-                NT for a historic northern homecoming 200 years in the making&quot;
+                &quot;Join us March 20 – 22, 2026 on the frozen ice of Great Bear Lake in
+                Délı̨nę, NT for a historic northern homecoming 200 years in the
+                making&quot;
               </p>
               <p>~ Chief Danny Gaudet</p>
             </div>
