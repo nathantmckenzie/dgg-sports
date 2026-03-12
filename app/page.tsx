@@ -53,7 +53,7 @@ export default function Home() {
         left-1/2
         -translate-x-1/2
         w-[95%]
-        max-w-195
+        max-w-190
         flex flex-col
         items-center
         text-center
@@ -66,13 +66,13 @@ export default function Home() {
           >
             {/* HEADLINE (blur) */}
             <div className="w-full px-3 py-3">
-              <h1 className="text-[clamp(1rem,3vw,2.6rem)] uppercase font-bold leading-tight">
+              <h1 className="text-[clamp(1.3rem,3vw,2.6rem)] uppercase font-bold leading-tight">
                 2026 ALL STAR ALUMNI WINTER CLASSIC
               </h1>
             </div>
 
             {/* DESCRIPTION (blur) */}
-            <div className="w-full px-3 py-3 text-[clamp(.5rem,1.6vw,1rem)] font-bold">
+            <div className="w-full px-3 py-3 text-[clamp(.7rem,1.6vw,1rem)] font-bold">
               <p className="leading-snug italic">
                 &quot;Join us March 20 – 22, 2026 on the ice of Great Bear Lake in Délı̨nę,
                 NT for a historic northern homecoming 200 years in the making&quot;
