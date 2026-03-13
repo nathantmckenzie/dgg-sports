@@ -20,7 +20,7 @@ export default function Home() {
             priority
           />
 
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30">
+          <div className="absolute bottom-[34%] left-1/2 -translate-x-1/2 z-30">
             <Link
               href="/learn-the-history"
               className="inline-block
@@ -31,7 +31,8 @@ export default function Home() {
         font-semibold
         uppercase
         tracking-wide
-        // text-[clamp(0.2rem,1vw,.9rem)]
+        text-[clamp(.8rem,2vw,1.5rem)]
+        min-[1152px]:text-[1.5rem]
         rounded-sm
         shadow-lg
         hover:bg-[#2A3B48]

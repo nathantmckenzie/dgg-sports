@@ -20,16 +20,6 @@ export default function Header() {
   return (
     <header className="w-full bg-[#7d9ba2]">
       <div className="mx-auto flex h-20 items-center gap-4 px-3 lg:px-10">
-        {/* Left Logo */}
-        <Image
-          src="/deline-logo.svg"
-          alt="Deline Logo"
-          width={100}
-          height={100}
-          priority
-          className="w-[clamp(30px,6vw,50px)] h-auto md:hidden"
-        />
-
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-2 lg:gap-4 text-[clamp(0.45rem,1vw,.9rem)] font-semibold uppercase tracking-wide text-[#F2F6F8] w-full lg:w-auto">
           <Link
@@ -77,16 +67,6 @@ export default function Header() {
         <div className="md:hidden ml-auto">
           <MobileSocialMenu />
         </div>
-
-        {/* Right Logo */}
-        <Image
-          src="/all-star-game-logo.png"
-          alt="All Star Game Logo"
-          width={100}
-          height={100}
-          priority
-          className="w-[clamp(30px,7vw,60px)] h-auto md:hidden"
-        />
       </div>
     </header>
   );
