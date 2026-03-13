@@ -10,7 +10,7 @@ function SocialIcon({ src, alt, link }: { src: string; alt: string; link: string
         alt={alt}
         width={100}
         height={100}
-        className="w-[clamp(25px,3vw,50px)] h-auto hover:opacity-80 transition"
+        className="w-[clamp(25px,3vw,40px)] h-auto hover:opacity-80 transition"
       />
     </Link>
   );
@@ -21,7 +21,18 @@ export default function Header() {
     <header className="w-full bg-[#7d9ba2]">
       <div className="mx-auto flex h-20 items-center gap-4 px-3 lg:px-10">
         {/* Navigation */}
-        <nav className="flex flex-wrap justify-center gap-2 lg:gap-4 text-[clamp(0.45rem,1vw,.9rem)] font-semibold uppercase tracking-wide text-[#F2F6F8] w-full lg:w-auto">
+        <nav
+          className="
+            flex
+            flex-wrap
+            justify-center
+            gap-2 lg:gap-4
+            text-[clamp(0.5rem,2vw,.8rem)]
+            font-semibold uppercase tracking-wide text-[#F2F6F8]
+            w-full lg:w-auto
+            min-[1350px]:flex-nowrap
+          "
+        >
           <Link
             href="https://dgg-sports-main-site.vercel.app/"
             className="hover:underline"
@@ -52,7 +63,7 @@ export default function Header() {
         </nav>
 
         {/* Desktop Social Icons */}
-        <div className="hidden md:flex items-center gap-[clamp(12px,2vw,24px)] ml-auto">
+        <div className="hidden md:flex items-center gap-[clamp(1px,1vw,15px)] ml-auto">
           <SocialIcon
             src="/facebook-logo.png"
             alt="Facebook"
