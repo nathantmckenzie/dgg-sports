@@ -9,7 +9,6 @@ export default function Home() {
       <Header />
       {/* ================= HERO ================= */}
       <section id="home" className="relative w-full flex justify-center">
-        {/* Container */}
         <div className="relative w-full md:max-w-6xl md:px-6 px-0">
           <Image
             src="/homepage2.png"
@@ -20,6 +19,30 @@ export default function Home() {
             className="w-full h-auto block rounded-sm"
             priority
           />
+
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30">
+            <Link
+              href="/learn-the-history"
+              className="inline-block
+        px-[clamp(10px,2vw,22px)]
+        py-[clamp(6px,1vw,12px)]
+        bg-[#7d9ba2]
+        text-[#F2F6F8]
+        font-semibold
+        uppercase
+        tracking-wide
+        // text-[clamp(0.2rem,1vw,.9rem)]
+        rounded-sm
+        shadow-lg
+        hover:bg-[#2A3B48]
+        transition
+        no-underline
+        cursor-pointer
+        font-serif"
+            >
+              Learn the History
+            </Link>
+          </div>
         </div>
       </section>
 

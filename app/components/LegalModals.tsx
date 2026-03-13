@@ -98,7 +98,16 @@ export default function LegalModals() {
         <h3 className="font-semibold mt-6">5. Your Rights</h3>
         <p>
           You may request access to, correction of, or deletion of your personal data by
-          contacting us at [Insert Contact Email].
+          contacting us at{" "}
+          <a
+            href="mailto:queries@dggsports.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-400 transition"
+          >
+            queries@dggsports.com
+          </a>{" "}
+          .
         </p>
 
         <h3 className="font-semibold mt-6">6. Changes to This Policy</h3>
@@ -199,8 +208,15 @@ export default function LegalModals() {
 
         <h3 className="font-semibold mt-6">9. Contact</h3>
         <p>
-          For questions about these terms or requests for permissions, please contact:
-          [Insert Email]
+          For questions about these terms or requests for permissions, please contact:{" "}
+          <a
+            href="mailto:queries@dggsports.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-400 transition"
+          >
+            queries@dggsports.com
+          </a>{" "}
         </p>
       </Modal>
 
@@ -279,7 +295,15 @@ export default function LegalModals() {
         <h3 className="font-semibold mt-6">Requests for Permission</h3>
         <p>
           For inquiries regarding the use of images, artwork, historical content, or
-          branding materials, please contact: Insert Email
+          branding materials, please contact:{" "}
+          <a
+            href="mailto:queries@dggsports.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-400 transition"
+          >
+            queries@dggsports.com
+          </a>{" "}
         </p>
 
         <h3 className="font-semibold mt-6">Third-Party Rights</h3>
