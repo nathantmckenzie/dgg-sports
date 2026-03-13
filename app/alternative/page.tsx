@@ -11,9 +11,8 @@ export default function Home() {
       <section id="home" className="relative w-full flex justify-center">
         {/* Container */}
         <div className="relative w-full md:max-w-6xl md:px-6 px-0">
-          {/* HERO IMAGE */}
           <Image
-            src="/hero.png"
+            src="/homepage2.png"
             alt="Great Bear Lake Winter Classic"
             width={1920}
             height={1000}
@@ -21,55 +20,6 @@ export default function Home() {
             className="w-full h-auto block rounded-sm"
             priority
           />
-
-          {/* TOP DELINE LOGO */}
-          <div className="hidden md:block absolute top-4 left-1/2 -translate-x-1/2 z-30">
-            <div className="relative w-[clamp(60px,8vw,100px)] aspect-square">
-              <Image
-                src="/deline-logo.svg"
-                alt="Deline Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-
-          {/* CONTENT STACK */}
-          <div className="absolute top-[18%] left-1/2 -translate-x-1/2 w-[95%] max-w-[42rem] flex flex-col items-center text-center bg-white/25 backdrop-blur-sm rounded px-4 py-4 z-20 gap-4">
-            {/* HEADLINE */}
-            <h1 className="text-[clamp(1.3rem,3vw,2.6rem)] font-bold uppercase leading-tight [text-wrap:balance]">
-              2026 ALL STAR ALUMNI WINTER CLASSIC
-            </h1>
-
-            {/* ALL-STAR LOGO */}
-            <div className="relative w-[clamp(60px,10vw,130px)] aspect-square">
-              <Image
-                src="/all-star-game-logo.png"
-                alt="All Star Game Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            {/* DESCRIPTION */}
-            <p className="text-[clamp(.7rem,1.6vw,1rem)] font-bold leading-snug italic [text-wrap:balance]">
-              "Join us March 20 – 22, 2026 on the frozen ice of Great Bear Lake in Délı̨nę,
-              NT for a historic northern homecoming 200 years in the making"
-              <br />~ Chief Danny Gaudet
-            </p>
-          </div>
-
-          {/* CTA BUTTON */}
-          <div className="absolute bottom-[5%] right-[5%] z-30">
-            <Link
-              href="/learn-the-history"
-              className="inline-block p-[15px] bg-[#7d9ba2] text-[#F2F6F8] font-semibold uppercase tracking-wide text-[clamp(0.75rem,1.5vw,2rem)] rounded-sm shadow-lg hover:bg-[#2A3B48] transition no-underline cursor-pointer font-serif"
-            >
-              Learn the History
-            </Link>
-          </div>
         </div>
       </section>
 
