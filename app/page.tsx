@@ -407,8 +407,10 @@ export default function Home() {
             <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
             <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
               From signed jerseys and game-used equipment to exclusive All Star Alumni
-              merchandise, the Winter Classic auction and online store offer something for
-              every fan. Proceeds directly support community programming and youth
+              merchandise, the Winter Classic{" "}
+              <span className="font-bold underline">auction</span> and{" "}
+              <span className="font-bold underline">online store</span> offer something
+              for every fan. Proceeds directly support community programming and youth
               engagement in the Sahtú region.
               <br />
               <br />

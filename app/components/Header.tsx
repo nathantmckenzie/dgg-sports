@@ -23,19 +23,19 @@ export default function Header() {
         {/* Navigation */}
         <nav
           className="
-            flex
-            flex-wrap
-            justify-center
-            gap-2 lg:gap-4
+            flex flex-wrap justify-center
             text-[clamp(0.5rem,2vw,.8rem)]
             font-semibold uppercase tracking-wide text-[#F2F6F8]
             w-full lg:w-auto
             min-[1350px]:flex-nowrap
+            [&>a]:px-2
+            [&>a:not(:last-child)]:after:content-['|']
+            [&>a:not(:last-child)]:after:ml-2
           "
         >
           <Link
             href="https://dgg-sports-main-site.vercel.app/"
-            className="hover:underline"
+            className="hover:underline px-2"
           >
             DGG Sports
           </Link>
@@ -65,7 +65,6 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Desktop Social Icons */}
         <div className="hidden md:flex items-center gap-[clamp(1px,1vw,15px)] ml-auto">
           <SocialIcon
             src="/facebook-logo.png"
@@ -77,7 +76,6 @@ export default function Header() {
           <SocialIcon src="/tiktok-logo.png" alt="TikTok" link="#" />
         </div>
 
-        {/* Mobile Social Dropdown */}
         <div className="md:hidden ml-auto">
           <MobileSocialMenu />
         </div>
