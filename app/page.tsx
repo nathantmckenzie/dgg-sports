@@ -20,7 +20,7 @@ export default function Home() {
             priority
           />
 
-          <div className="absolute top-[56%] left-1/2 -translate-x-1/2 z-30">
+          <div className="absolute top-[54%] left-1/2 -translate-x-1/2 z-30">
             <Link
               href="/learn-the-history"
               className="inline-block
@@ -31,8 +31,8 @@ export default function Home() {
         font-semibold
         uppercase
         tracking-wide
-        text-[clamp(.8rem,2vw,1.5rem)]
-        min-[1152px]:text-[1.5rem]
+        text-[clamp(.4rem,1.6vw,1.1rem)]
+        min-[1152px]:text-[1.1rem]
         rounded-sm
         shadow-lg
         hover:bg-[#2A3B48]
@@ -398,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* ================= AUCTION ================= */}
-      <section id="auction" className="py-[12vw] md:py-32 text-white">
+      <section id="auction&merchandise" className="py-[12vw] md:py-32 text-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8">

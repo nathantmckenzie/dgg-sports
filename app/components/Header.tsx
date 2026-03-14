@@ -57,8 +57,11 @@ export default function Header() {
           <a href="#partners" className="hover:underline">
             Sponsors
           </a>
-          <a href="#auction" className="hover:underline">
-            Auction & Merchandise
+          <a href="#auction&merchandise" className="hover:underline">
+            Auction
+          </a>
+          <a href="#auction&merchandise" className="hover:underline">
+            Merchandise
           </a>
         </nav>
 
