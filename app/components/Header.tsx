@@ -33,10 +33,7 @@ export default function Header() {
             [&>a:not(:last-child)]:after:ml-2
           "
         >
-          <Link
-            href="https://dgg-sports-main-site.vercel.app/"
-            className="hover:underline px-2"
-          >
+          <Link href="https://dggsports.com/" className="hover:underline px-2">
             DGG Sports
           </Link>
           <a href="#about" className="hover:underline">
