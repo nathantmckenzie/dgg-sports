@@ -24,9 +24,21 @@ export default function MobileSocialMenu() {
             alt="Facebook"
             link="https://www.facebook.com/share/176KnLH4As/"
           />
-          <SocialIcon src="/youtube-logo.png" alt="YouTube" link="#" />
-          <SocialIcon src="/instagram-logo.png" alt="Instagram" link="#" />
-          <SocialIcon src="/tiktok-logo.png" alt="TikTok" link="#" />
+          <SocialIcon
+            src="/youtube-logo.png"
+            alt="YouTube"
+            link="https://www.youtube.com/@DGGSportsEntertainment"
+          />
+          <SocialIcon
+            src="/instagram-logo.png"
+            alt="Instagram"
+            link="https://www.instagram.com/dggallstarclassic"
+          />
+          <SocialIcon
+            src="/tiktok-logo.png"
+            alt="TikTok"
+            link="https://www.tiktok.com/@dggsportsentertainment"
+          />
         </div>
       )}
     </div>
