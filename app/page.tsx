@@ -73,10 +73,12 @@ export default function Home() {
               in true northern style. Guests will enjoy dinner, cocktails, live
               entertainment, and a special meet & greet with the NHL All Star Alumni. It’s
               a chance to come together and welcome the players to Great Bear Lake before
-              the weekend’s events begin. Sponsorship opportunities are still available
-              for organizations looking to support this historic celebration. Explore the
-              tiers and benefits to see how your partnership can help bring the Winter
-              Classic to life.
+              the weekend’s events begin.
+              <br />
+              <br />
+              Sponsorship opportunities are still available for organizations looking to
+              support this historic celebration. Explore the tiers and benefits to see how
+              your partnership can help bring the Winter Classic to life.
               <br /> <br />
               <a
                 href="/sponsorship.pdf"
