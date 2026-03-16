@@ -47,8 +47,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ================= GALA ================= */}
+      <section id="gala" className="py-[12vw] md:py-32 text-white">
+        <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+          <div className="w-full text-center">
+            <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] mb-8 uppercase text-center">
+              2026 ALL STAR ALUMNI GALA
+            </h2>
+
+            <p className="leading-loose text-[clamp(1.25rem,1.5vw,1.5rem)]">
+              March 20 · 5:00 PM
+            </p>
+
+            <div className="w-16 h-[2px] bg-[#B28A2E] mb-8 mx-auto md:mx-0" />
+
+            <p className="leading-loose text-[clamp(1rem,1.5vw,1.25rem)]">
+              <a
+                href="/gala-itinerary.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-[#2A3B48]"
+              >
+                An evening to open the Winter Classic
+              </a>{" "}
+              in true northern style. Guests will enjoy dinner, cocktails, live
+              entertainment, and a special meet & greet with the NHL All Star Alumni. It’s
+              a chance to come together and welcome the players to Great Bear Lake before
+              the weekend’s events begin. Sponsorship opportunities are still available
+              for organizations looking to support this historic celebration. Explore the
+              tiers and benefits to see how your partnership can help bring the Winter
+              Classic to life.
+              <br /> <br />
+              <a
+                href="/sponsorship.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-[#2A3B48]"
+              >
+                Learn More About Sponsorship
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="h-px bg-[#1C2B36]/10 mx-8" />
+
       {/* ================= ABOUT ================= */}
-      <section id="about" className="py-[12vw] md:py-32 text-white">
+      <section id="about" className="py-[12vw] md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] mb-8 uppercase text-center">
@@ -102,7 +148,7 @@ export default function Home() {
       <div className="h-px bg-[#1C2B36]/10 mx-8" />
 
       {/* ================= ALUMNI (Ceremonial Dark Section) ================= */}
-      <section id="alumni" className="py-[12vw] md:py-32 bg-white">
+      <section id="alumni" className="py-[12vw] md:py-32 text-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16">
           <div className="w-full text-center md:text-left">
             <h2 className=" font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
@@ -159,7 +205,7 @@ export default function Home() {
       <div className="h-px bg-[#1C2B36]/10 mx-8" />
 
       {/* ================= CULTURAL ================= */}
-      <section id="cultural" className="py-[12vw] md:py-32 text-white">
+      <section id="cultural" className="py-[12vw] md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 text-center">
           <div className="w-full md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
@@ -194,7 +240,7 @@ export default function Home() {
       <div className="h-px bg-[#1C2B36]/10 mx-8" />
 
       {/* ================= SCHEDULE ================= */}
-      <section id="schedule" className="py-[12vw] md:py-32 bg-white">
+      <section id="schedule" className="py-[12vw] md:py-32 text-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2">
             <Image
@@ -227,7 +273,7 @@ export default function Home() {
                 href="https://www.chadbrownlee.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 Chad Brownlee
               </a>
@@ -236,7 +282,7 @@ export default function Home() {
                 href="https://www.tomcochrane.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 Tom Cochrane
               </a>
@@ -245,7 +291,7 @@ export default function Home() {
                 href="https://www.leelagilday.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 Leela Gilday
               </a>
@@ -254,7 +300,7 @@ export default function Home() {
                 href="https://aaronpritchett.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 Aaron Pritchett
               </a>{" "}
@@ -266,7 +312,7 @@ export default function Home() {
                 href="https://www.instagram.com/chefngomes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 Nicole Gomes
               </a>{" "}
@@ -312,7 +358,7 @@ export default function Home() {
       </section>
 
       {/* ================= LOCATION ================= */}
-      <section id="location" className="py-[12vw] md:py-32 text-white">
+      <section id="location" className="py-[12vw] md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
@@ -358,7 +404,7 @@ export default function Home() {
       <div className="h-px bg-[#1C2B36]/10 mx-8" />
 
       {/* ================= PARTNERS & SPONSORS ================= */}
-      <section id="partners" className="py-[12vw] md:py-32 bg-white">
+      <section id="partners" className="py-[12vw] md:py-32 text-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row-reverse items-center gap-16 text-center md:text-left">
           <div className="w-full">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8 uppercase">
@@ -378,7 +424,7 @@ export default function Home() {
                 href="https://www.facebook.com/DelineGotineGovernment/posts/pfbid0jFkJpWsrt7z8j97wQUSELEMNVSZ34bfVmkx6z95fzYiGKuSpYLAMtpdtNyqvdheFl?rdid=enYTa82O6bZcBX0Z#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 sponsorship
               </a>{" "}
@@ -387,7 +433,7 @@ export default function Home() {
                 href="mailto:queries@dggsports.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-400 transition"
+                className="underline hover:text-[#2A3B48] transition"
               >
                 contact
               </a>{" "}
@@ -398,7 +444,7 @@ export default function Home() {
       </section>
 
       {/* ================= AUCTION ================= */}
-      <section id="auction&merchandise" className="py-[12vw] md:py-32 text-white">
+      <section id="auction&merchandise" className="py-[12vw] md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="font-serif tracking-[0.15em] text-[clamp(2rem,1.75vw,2.5rem)] text-center mb-8">
@@ -430,7 +476,7 @@ export default function Home() {
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="py-6 md:py-10 bg-white">
+      <footer className="py-6 md:py-10 text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           {/* Top Grid */}
           <div

@@ -9,7 +9,7 @@ export default function LegalModals() {
   return (
     <>
       <div>
-        <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 text-center text-[#B28A2E]">
+        <h4 className="uppercase tracking-widest text-xs md:text-sm mb-3 text-center text-white">
           Legal
         </h4>
 
