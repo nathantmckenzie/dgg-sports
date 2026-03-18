@@ -353,7 +353,14 @@ export default function Home() {
             </ul>
 
             <p className="text-[clamp(1rem,1.75vw,1.25rem)] text-center">
-              WITH MORE ACTIVITES AND EVENTS TO BE ANNOUNCED
+              <a
+                href="https://www.facebook.com/photo/?fbid=1361964272641005&set=a.255217416649035"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-[#2A3B48] transition"
+              >
+                UPDATED SCHEDULE
+              </a>
             </p>
           </div>
         </div>
