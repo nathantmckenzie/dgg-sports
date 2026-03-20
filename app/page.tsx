@@ -124,7 +124,7 @@ export default function Home() {
                 Délı̨nę
               </a>{" "}
               for a once-in-a-lifetime gathering that honours the land, the people, and
-              the legacy that continues to inspire Canadia.
+              the legacy that continues to inspire Canada.
               <br />
               <br />
               This year’s event is a chance to reconnect—with the land, with each other,
