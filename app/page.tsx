@@ -354,7 +354,7 @@ export default function Home() {
 
             <p className="text-[clamp(1rem,1.75vw,1.25rem)] text-center">
               <a
-                href="https://www.facebook.com/photo/?fbid=1361964272641005&set=a.255217416649035"
+                href="https://www.facebook.com/photo?fbid=1362732599230839&set=a.255217416649035"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-[#2A3B48] transition"
